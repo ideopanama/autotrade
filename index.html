@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AutoTrade</title>
+    <!-- favicon CSS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+    <!-- custom fonts -->
+    <link href="fonts/aileron.css" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="" data-spy="scroll" data-target="#navbar-nav">
+
+    <!-- =========== Preloader Start ============ -->
+    <div class="preloader-main">
+        <div class="preloader-wapper">
+            <svg class="preloader" xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="200">
+                <defs>
+                    <filter id="goo" x="-40%" y="-40%" height="200%" width="400%">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -8" result="goo" />
+                    </filter>
+                </defs>
+                <g filter="url(#goo)">
+                    <circle class="dot bg-fill-primary " cx="50" cy="50" r="25" />
+                    <circle class="dot" cx="50" cy="50" r="25" fill="#4c83ff" />
+                </g>
+            </svg>
+            <div>
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+            </div>
+        </div>
+    </div>
+    <!-- =========== Preloader End ============ -->
+
+    <div class="main">
+        <!-- =========== Start of Navigation (main menu) ============ -->
+        <header class="navbar navbar-sticky navbar-expand-lg navbar-dark">
+            <div class="container position-relative">
+                <a class="navbar-brand mr-70" href="index.html">
+                    <img class="navbar-brand__regular" src="img/Logos/AutoTrade-White-200x50px.png" alt="brand-logo">
+                    <img class="navbar-brand__sticky" src="img/Logos/AutoTrade-Green-200x50px.png" alt="sticky brand-logo">
+                </a>
+                <!--  End of brand logo -->
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- end of Nav toggler -->
+
+                <div class="navbar-inner ml-lg-auto">
+                    <!--  Nav close button inside off-canvas/ mobile menu -->
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- end of Nav Toggoler -->
+                    <nav>
+                         <ul class="navbar-nav" id="navbar-nav">
+                             <li class="nav-item">
+                                <a class="nav-link" href="#features">¿Por qué AutoTrade?</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="#HowTo">¿Cómo Funciona?</a>
+                            </li>
+                            
+                           <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="javascript:;">Blog Classic</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="blog-sidebar-right.html">Sidebar Right</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="blog-sidebar-Left.html">Sidebar Left</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="blog-grid-2-col-sidebar-right.html">2 Columns Sidebar Right</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="blog-grid-2-col-sidebar-left.html">2 Columns Sidebar Left</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="blog-full.html">Full Width</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="javascript:;">Blog Card</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="blog-card-2-col.html">Card 2 Columns</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="blog-card-3-col.html">Card 3 Columns</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="blog-card-full.html">Card Full Width</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="javascript:;">Blog List</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="blog-list-sidebar-right.html">List Sidebar Rigt</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="blog-list-sidebar-left.html">List Sidebar Left</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="blog-list-full.html">List Full Width</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="javascript:;">Blog
+                                            Details</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="blog-details-sidebar-right.html">Blog Details Sidebar Right</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="blog-details-sidebar-left.html">Blog Details Sidebar Left</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="blog-details-full.html">Blog Details Full</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="javascript:;">Accounts</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="login.html">Login</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="signup.html">Signup</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="recover-account.html">Recover Account</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="javascript:;">Specialty Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="coming-soon.html">Comming Soon</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="download.html">Download</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="subscribe-confirmation.html">Subscribe Confirmation</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="maintenance.html">Maintenance</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="error-404.html">Error 404</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li> 
+                                        <a class="dropdown-item" href="reviews.html">Reviews</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="pricing.html">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="faq.html">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </li>-->
+                        </ul> 
+                        <!-- end of nav menu items -->
+                    </nav>
+                </div>
+                <div class="flex-row d-md-flex ml-20 mr-70 mr-lg-0 d-none d-sm-inline-block">
+                    <a href="#appPlace" class="btn btn--outline btn--sm btn-3d-hover btn-splash-hover">
+                        <span class="btn__text">¡DESCARGALA YA! </span> 
+                    </a>
+                </div>
+                <!-- end of nav cta button -->
+            </div>
+            <!-- end of container -->
+        </header>
+        <!-- =========== End of Navigation (main menu)  ============ -->
+
+        <!-- =========== Start of Hero ============ -->
+        <section id="HowTo"class="pb-lg-0 hero hero--dark bg-color-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+                        <div class="d-lg-flex align-items-lg-center position-relative text-center mb-100">
+                            <div class="hero-content hero-content--center mx-auto">
+                                <h1 class="hero__title font-w-400">¡Rápido, Fácil y Transparente!</h1>
+                                <p class="lead hero__description">AutoTrade es la solución para vender su auto de forma rápida, eficiente y transparente mediante una subasta en línea. 
+</p>
+                                <a href="#appPlace" class="btn btn--bg-yellow btn-3d-hover btn-splash-hover">¡Descargala ya!</a>
+                            </div>
+                            <!-- end of content -->
+                        </div>
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+                <div class="row">
+                    <div class="col-12 col-xl-8 mx-auto align-items-center text-center">
+                        <div class="position-relative">
+                            <picture><img  src="img/acura-nsx.png" alt="hero-6-screen"></picture>
+                            <a class="lightbox pos-center media-player-icon media-player-icon--lg media-player-icon--fill-coral btn-splash-hover" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=aRh_eUQSmIg">
+                                <i class="icon icon-triangle-right-17"></i>
+                            </a>
+                        </div>
+                        <!-- enf of screen / video -->
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+            <div class="hero__shape">
+                <img src="img/hero-svg-shape-2.svg" alt="hero bg" class="svg">
+            </div>
+            <!-- end of hero svg shape -->
+        </section>
+        <!-- =========== End of Hero ============ -->
+
+        <!-- =========== Start of Features ============ -->
+        <section class="space-top" id="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-7 col-xl-6 mx-auto">
+                        <div class="section-title reveal text-center mb-80">
+                            <p class="mb-10 text-uppercase font-w-700">¿Por qué AutoTrade?</p>
+                            <h3 class="font-w-400">Reducimos un proceso de diás a 1 hora</h3>
+                        </div>
+                        <!-- end of section title -->
+                    </div>
+                </div>
+                <!-- end of row -->
+                <div class="row border-bottom-light space-bottom reveal">
+                    <div class="col-12 col-md-6 col-lg-4 mb-30 mb-lg-0">
+                        <div class="features">
+                            <div class="d-flex mb-20">
+                                <span class="mr-20">
+                                    <img src="img/family.png" alt="family">
+                                </span>
+                                <h5>Rápido</h5>
+                            </div>
+                            <p><span class="color-primary">Justo como viste.</span> Antes de AutoTrade, la compra y venta de vehículos en Panamá tomaba días. Ahora, ¡Vende tu auto en 1 hora!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end of col -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-30 mb-lg-0">
+                        <div class="features">
+                            <div class="d-flex mb-20">
+                                <span class="mr-20">
+                                    <img src="img/b-meeting.png" alt="communication">
+                                </span>
+                                <h5>Fácil</h5>
+                            </div>
+                            <p><span class="color-primary">No más esperas.</span> Nostros nos encargamos de todo el papeleo en el trámite de venta de tu vehículo.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end of col -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-30 mb-lg-0">
+                        <div class="features">
+                            <div class="d-flex mb-20">
+                                <span class="mr-20">
+                                    <img src="img/filter-organization.png" alt="management">
+                                </span>
+                                <h5>Transparente</h5>
+                            </div>
+                            <p><span class="color-primary">100% Garantizado.</span> Solamente nuestros compradores autorizados y calificados en Panamá pueden accesar a las subastas para compra de vehículos.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </section>
+        <!-- =========== End of Features ============ -
+
+
+
+           
+
+        <!-- =========== Start of Features Tab Slider ============ -->
+        <section class="bg-color-primary features-custom-container">
+            <div class="overlap overlap--lg  z-index1 d-none d-xl-block"></div>
+            <div class="content-wrapper">
+                <div class="container">
+                    <div class="row align-items-center align-items-xl-start">
+                        <div class="col-12 col-md-6 col-xl-6 mb-md-40 mb-xl-0 mt-xl-5">
+                            <p class="lead mb-10 font-w-700 text-uppercase">Todo en la palma de tu mano</p>
+                            <h3 class="mb-20 font-w-400">Rápido y Fácil de Usar</h3>
+                            <p class="mb-30 mb-lg-0">En tan solo 15 minutos. Obtendras aprobación para que tu vehículo sea vendido./p>
+                        </div>
+                        <!-- end of col -->
+                        <div class="col-12 col-md-5 offset-md-1 offset-xl-0 col-xl-6 z-index2 reveal">
+                            <picture class="device-image"><img src="img/AT-iphone-app.png" alt="mobile"></picture>
+                        </div>
+                        <!-- end of col -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+                <!-- end of container -->
+            </div>
+            <!-- end of container -->
+            <div class="features features--slider-2 pt-100 mt-xl-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="slider slider-tabs mb-20">
+                                <div class="slide"><button class="slider-tab">CÓMODO</button></div>
+                                <div class="slide"><button class="slider-tab">CONVENIENTE</button></div>
+                                <div class="slide"><button class="slider-tab">TRANSPARENTE</button></div>
+                                <div class="slide"><button class="slider-tab">SEGURO</button></div>
+                                <div class="slide"><button class="slider-tab">RÁPIDO</button></div>
+                               
+                            </div>
+                            <!-- end of slider tab -->
+                            <div class="slider slider-contents">
+                                <div class="slide">
+                                    <p>Todo lo que el vendedor tiene que hacer es responder algunas preguntas sobre el estado del vehículo y tomar fotografías.</p>
+                                </div>
+                                <!-- end of single item -->
+                                <div class="slide">
+                                    <p>La aplicación procesa automáticamente toda la entrada y envía al comprador una oferta de intercambio por correo electrónico.</p>
+                                </div>
+                                <!-- end of single item -->
+
+                                <div class="slide">
+                                    <p>Racionalizado, transparente y promoviendo la economía del libre mercado.</p>
+                                </div>
+                                <!-- end of single item -->
+
+                                <div class="slide">
+                                    <p>Una vez que el comprador acepta la oferta de canje, el vehículo ingresa automáticamente a una subasta a la que solo pueden acceder los concesionarios en Panamá. Esta implementación ha reducido dramáticamente los costos transaccionales para el comercio automático.</p>
+                                </div>
+                                <div class="slide">
+                                    <p>Una vez el vendedor le confirma al cliente el precio de la subasta, el cliente acepta el precio, El comprador autorizado realiza el pago y en pocos minutos recibiras tu dinero ya sea en cheque o en tu cuenta bancaria.</p>
+                                </div>
+
+                                <!-- end of single item -->
+
+                              
+                            </div>
+                            <!-- end of slider content -->
+                        </div>
+                        <!-- end of col -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+                <!-- end of container -->
+            </div>
+            <!-- end of features -->
+        </section>
+        <!-- =========== End of Features Tab Slider ============ -->
+
+       
+ 
+                           
+
+        <!-- =========== Start of Content Block ============ -->
+        <section id="space-fly" class="space-bottom switchable d-md-flex align-items-md-center">
+           <div class="col-md-6 pl-md-0 mb-40 mb-md-0 text-center text-md-left">
+             <!--    <picture class="switchable__image">
+                    <img src="img/admin-dashboard-2.png" alt="dashboard-image">
+                </picture> -->
+            </div> 
+            <!-- end of image -->
+
+            <div class="switchable__text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center text-md-left ml-md-auto reveal">
+                            <h3 class="mb-4 font-w-400">Porque Creemos en nuestros <br>Clientes </h3>
+                            <p class="mb-5">Solamente los compradores autorizados, son los únicos que pueden 
+                            hacer uso de AutoTrade para participar en las subastas de los vehículos de nuestros clientes.</p>
+                            <a href="#appPlace" class="btn btn--bg-primary btn-3d-hover btn-splash-hover">¡Descargala ya!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of content -->
+        </section>
+        <!-- =========== End of Content Block ============ -->
+
+        
+
+        <!-- =========== Start of Newsletter ============ -->
+        <section class="bg-color-primary space">
+            <div class="background-holder background-holder--contain">
+                <img src="img/cta-bg.png" alt="pattern" class="background-image-holder">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 text-center mx-auto reveal">
+                        <h3 class="mb-20 font-w-400">¡Hablemos!</h3>
+                        <p class="lead mb-50 font-w-400">Estas interesado en saber más, deja tus datos y nos comunicaremos inmediatamente.</p>
+                        <div class="position-relative text-center">
+                           <form class="form form--sm">
+    <div class="form-row mb-20">
+        <div class="form-group col-sm-12 col-md-6">
+            <label class="label-control mb-10" for="name">Nombre*</label>
+            <input type="text" class="form-control" id="name" placeholder="JUAN PEREZ" required>
+        </div>
+        <div class="form-group col-sm-12 col-md-6">
+            <label class="label-control mb-10" for="phone">Teléfono</label>
+            <input type="text" class="form-control" id="phone" placeholder="+(507)888 hola">
+        </div>
+    </div>
+    <div class="form-row mb-20">
+        <div class="form-group col-sm-12 ">
+            <label class="label-control mb-10" for="email">Email *</label>
+            <input type="email" class="form-control" id="email" placeholder="i.e. hola@autotrade.com" required>
+        </div>
+       <!-- <div class="form-group col-sm-12 col-md-6">
+            <label class="label-control mb-10" for="subject">Subject*</label>
+            <input type="text" class="form-control" id="subject" placeholder="i.e. Webdesign" required>
+        </div> -->
+    </div>
+    <div class="form-row mb-20">
+        <div class="form-group col-sm-12">
+            <label class="label-control mb-10" for="message">Mensaje</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="isdasdasdasd" required></textarea>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-sm-12 text-center">
+            <button type="submit" class="btn btn--bg-primary btn-splash-hover btn-3d-hover">
+                <span class="btn__text">Enviar</span>
+            </button>
+        </div>
+    </div>
+</form>
+                         <!-- ===========    <span class="type--fine-print">No credit card required.</span> ============ -->
+                        </div>
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </section>
+        <!-- =========== End of Newsletter ============ -->
+
+
+        <!-- =========== Start of CTA ============ -->
+        <section id="appPlace" class="space border-bottom-light hidden">
+            <div class="container">
+                <div class="row align-items-center flex-column-reverse flex-md-row justify-content-center">
+                    <div class="col-12 col-md-5">
+                        <div class="section-title reveal text-center text-md-left mb-80 mb-sm-50 reveal">
+                            <h3 class="mb-3 font-w-400">¡Descargala Ya!</h3>
+                            <p class="lead">Una vez aceptada la oferta, AutoTrade se encargará del proceso de cobro, pago y traspaso del auto.</p>
+                            <div class="button-group flex-column flex-sm-row align-items-center justify-content-center justify-content-md-start mt-50">
+                                <a href="https://itunes.apple.com/us/app/autotrade-pty/id1250155354?mt=8&ign-mpt=uo%3D2" class="mr-sm-3 mb-10 mb-sm-0 box-shadow-2 rounded-md btn-3d-hover transition-default">
+                                    <img src="img/app-store-md.png" class="rounded-md" alt="app-store">
+                                </a>
+                           <!--     <a href="#" class="box-shadow-2 rounded-md btn-3d-hover transition-default">
+                                    <img src="img/google-play-md.png" class="rounded-md" alt="google-play">
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 ml-md-auto text-center text-md-right reveal">
+                        <div class="position-relative d-flex align-items-center justify-content-center z-index1">
+                            <div class="oval pos-center z-index-1"></div>
+                            <picture>
+                                <img src="img/AT-iphone-app.png" alt="mobile">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========== End of CTA ============ -->
+        
+        <!-- =========== Start of Footer ============ -->
+        <footer class="footer position-relative">
+            <div class="space border-bottom-light">
+                <div class="container">
+                    <div class="row">
+
+                            <!--  <div class="col-12 col-sm-4 col-lg-3 mb-20 mb-lg-0">  Sizing si hay que poner mas cols-->
+
+                        <div class="col-12 col-sm-12 col-lg-6 mb-20 mb-lg-0"> 
+                            <span class="mb-20">
+                                <a href="#"><img src="img/Logos/AutoTrade-Green-164x41px.png" alt="logo"></a>
+                            </span>
+                            <p>Antes de AutoTrade, la compra y venta de vehículos en Panamá tomaba días. Ahora, ¡Vende tu auto en 1 hora!</p>
+                            <ul class="social-lists d-flex mb-0 mt-30">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                            <!-- end of social list -->
+
+                        </div>
+                    <!--   <div class="col-6 col-sm-4 col-lg-3 mb-20 mb-sm-0">
+                            <div class="footer-widget">
+                                <h6 class="mb-20">Company</h6>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Press</a></li>
+                                    <li><a href="#">Brand Guidelines</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <!-- end of col -->
+                <!--    <div class="col-6 col-sm-4 col-lg-3 mb-20 mb-sm-0">
+                            <div class="footer-widget">
+                                <h6 class="mb-20">Product</h6>
+                                <ul>
+                                    <li><a href="#">Why xPider?</a></li>
+                                    <li><a href="#">Enterprise</a></li>
+                                    <li><a href="#">Customer Stories</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Security</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <!-- end of col -->
+
+                        <!--  <div class="col-6 col-sm-4 col-lg-3 mb-20 mb-sm-0">  Sizing si hay que poner mas cols-->
+                        <div class="col-6 col-sm-12 col-lg-6 mb-20 mb-sm-0">
+                            <div class="footer-widget">
+                                <h6 class="mb-20">Dirección</h6>
+                                <p class="">Direccion 1 ejem, <br> Panama, <br> Panamá.</p>
+
+                                <div class="mt-30 d-flex align-items-start flex-column flex-md-row">
+                                    
+                                    <span class="color-primary mr-20 mt-10 mb-10 mb-md-0"><i class="icon icon-email"></i></span>
+
+                                    <div>
+                                        <h6>Nuestro email</h6>
+                                        <a href="mailto:email@example.com">
+                                            <p>info@autotradepanama.com.pa</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of col -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+                <!-- end of container -->
+            </div>
+            <!-- end of main footer -->
+            <div class="bg-color-grey py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-md-flex justify-content-between align-items-center">
+                            <nav class="nav">
+                              <!--  <ul class="d-flex mb-md-0">
+                                    <li><a href="#">Status</a></li>
+                                    <li><a href="#">Privacy & Terms</a></li>
+                                    <li> -->
+                                       © 2019 AutoTrade Panama
+                            </nav>
+                            <!-- end of mini footer nav -->
+
+                        <!-- start of language
+                            <div class="d-flex justify-content-between ml-auto">
+                                <div class="lang-selector mr-30 position-relative">
+                                    <button class="lang-selector__button" type="button">
+                                        <img src="img/flag-usa.png" alt="United States" class="flag-image">
+                                        <span>English</span>
+                                        <i class="fa fa-angle-up"></i>
+                                    </button>
+                               
+
+                                    <ul class="lang-dropdown mb-0">
+                                        <li>
+                                            <a class="lang-dropdown__item d-flex align-items-center" href="#"><img src="img/flag-usa.png"
+                                                    alt="United States" class="flag-image mr-10">English</a>
+                                        </li>
+                                        <li>
+                                            <a class="lang-dropdown__item d-flex align-items-center" href="#"><img src="img/flag-spain.png"
+                                                    alt="United States" class="flag-image mr-10">Spanish</a>
+                                        </li>
+                                        <li>
+                                            <a class="lang-dropdown__item d-flex align-items-center" href="#"><img src="img/flag-france.png"
+                                                    alt="United States" class="flag-image mr-10">France</a>
+                                        </li>
+                                        <li>
+                                            <a class="lang-dropdown__item d-flex align-items-center" href="#"><img src="img/flag-bangladesh.png"
+                                                    alt="United States" class="flag-image mr-10">Bengali</a>
+                                        </li>
+                                    </ul>
+                                   end of language selector dropdown-->
+                                </div>
+                                <!-- end of language selector -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of container -->
+            </div>
+            <!-- mini footer end -->
+        </footer>
+        <!-- =========== End of Footer ============ -->
+    </div>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
