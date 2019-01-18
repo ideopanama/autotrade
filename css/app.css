@@ -2202,7 +2202,7 @@ p {
 }
 
 .media-player-icon--fill-coral {
-  background: #fc5c42;
+  background: #4DA15F;
   color: #fff;
   -webkit-box-shadow: 0 21px 16px 0 rgba(0, 0, 0, 0.09);
           box-shadow: 0 21px 16px 0 rgba(0, 0, 0, 0.09);
@@ -3202,6 +3202,7 @@ p {
   position: relative;
   padding-top: 5.33333rem;
   z-index: 1;
+
 }
 
 @media (min-width: 992px) {
@@ -3763,7 +3764,7 @@ p {
 }
 
 .gradient-1 .bg-color-primary, .gradient-1 .btn--bg-primary, .gradient-1 .navbar-sticky--on .btn, .navbar-sticky--on .gradient-1 .btn, .gradient-1 .btn--bg-grey:hover, .gradient-1 .btn--outline:hover, .gradient-1 .btn--outline-thick:hover, .gradient-1 .btn-border-hover.btn--color-white:before, .gradient-1 .card--focused, .gradient-1 .card--outline:hover, .gradient-1 .card--outline:focus, .gradient-1 .social-lists li a:hover, .social-lists li .gradient-1 a:hover, .gradient-1 .media-player-icon--fill-primary, .gradient-1 .oval, .gradient-1 .slick-active .slick-dots--long, .slick-active .gradient-1 .slick-dots--long, .gradient-1 .pagination .page-item.active .page-link, .pagination .page-item.active .gradient-1 .page-link {
-  background: -webkit-linear-gradient(135deg, #2f1ce0 0%, #53a0fd 50%, #51eca5 100%);
+  background: -webkit-linear-gradient(65deg, #2f1ce0 0%, #53a0fd 50%, #51eca5 100%);
   background: -o-linear-gradient(135deg, #2f1ce0 0%, #53a0fd 50%, #51eca5 100%);
   background: linear-gradient(-45deg, #2f1ce0 0%, #53a0fd 50%, #51eca5 100%);
 }

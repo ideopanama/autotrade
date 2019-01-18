@@ -123,13 +123,59 @@ h6 {
   padding-top: 8rem;
 }
 
+.features h5, p{text-align: center;}
+
+.heroBack{
+  background-image: url('../img/nice-white-at-night.jpg');
+  background-repeat: no-repeat;
+  position: center;
+}
+
 
 #space-fly{
-   background-image: url('../img/grand-cherokee-wall.jpg');
-    background-position: center;
+   background-image: url('../img/black-car.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+}
 
+.creemosSection{
+  color: #ffffff;
+  text-align: left;
+}
+
+
+
+#space-fly2{
+  padding-top: 30px;
+   background-image: url('../img/blue-creta.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-top: 128px;
+}
+
+.creemosSection2{
+  color: #ffffff;
+  text-align: right;
+}
+
+
+#appPlace2{
+   background-image: url('../img/thanks-guy-aftersale.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
 
 }
+
+.app-right{
+  text-align: right;
+
+}
+
+
+.feature-img{text-align: center;}
+
+
+
 
 /*! Place your custom styles here (below). 
       This will make it much easier to update the template later - you'll only need to preserve "this file
