@@ -129,6 +129,7 @@ h6 {
   background-image: url('../img/nice-white-at-night.jpg');
   background-repeat: no-repeat;
   position: center;
+  background-size: cover;
 }
 
 
@@ -136,6 +137,7 @@ h6 {
    background-image: url('../img/black-car.jpg');
    background-position: center;
    background-repeat: no-repeat;
+     background-size: cover;
 }
 
 .creemosSection{
@@ -151,6 +153,7 @@ h6 {
    background-position: center;
    background-repeat: no-repeat;
    padding-top: 128px;
+     background-size: cover;
 }
 
 .creemosSection2{
@@ -163,20 +166,50 @@ h6 {
    background-image: url('../img/thanks-guy-aftersale.jpg');
    background-position: center;
    background-repeat: no-repeat;
+     background-size: cover;
 
 }
 
-.app-right{
+#appPlaceResp{
+   background-image: url('../img/autotrade-385392073.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+     background-size: cover;
+     height: 500px;
+
+}
+
+.service-r{
   text-align: right;
 
 }
-
-
 .feature-img{text-align: center;}
 
+.app-l{
+  text-align: left;
 
+}
 
 
 /*! Place your custom styles here (below). 
       This will make it much easier to update the template later - you'll only need to preserve "this file
   ===================================================================================================*/
+
+/* APP PLACE - GUY DELIVERING CAR WITH TABLET
+AQUI ENTRA LOS SETTINGS DE RESPONSIVE MODULES */
+
+@media (max-width: 767px) {
+  #appPlace2 {
+    display: none;
+  
+  }
+}
+
+@media (min-width: 768px) {
+  #appPlaceResp{ display: none; }
+}
+
+
+
+
+
