@@ -126,7 +126,7 @@ h6 {
 .features h5, p{text-align: center;}
 
 .heroBack{
-  background-image: url('../img/nice-white-at-night.jpg');
+  background-image: url('../img/nice-white-at-night-og.jpg');
   background-repeat: no-repeat;
   position: center;
   background-size: cover;
@@ -163,7 +163,7 @@ h6 {
 
 
 #appPlace2{
-   background-image: url('../img/thanks-guy-aftersale.jpg');
+   background-image: url('../img/shutterstock_403943932.jpg');
    background-position: center;
    background-repeat: no-repeat;
      background-size: cover;
@@ -171,7 +171,7 @@ h6 {
 }
 
 #appPlaceResp{
-   background-image: url('../img/autotrade-385392073.jpg');
+   background-image: url('../img/shutterstock_403943932_square.jpg');
    background-position: center;
    background-repeat: no-repeat;
      background-size: cover;
@@ -209,7 +209,8 @@ AQUI ENTRA LOS SETTINGS DE RESPONSIVE MODULES */
   #appPlaceResp{ display: none; }
 }
 
-
-
-
-
+#appPlace{color: #000000;}
+#features{background-color: #4DA15F;}
+.lilcolor1stsection{color: #ffffff;}
+.btnAvaluo {background-color: #ffffff; }
+.btn--text{color: #000000;}

@@ -1456,12 +1456,12 @@ p {
 }
 
 .lead {
-  color: #7e8085;
+  color: #000;
 }
 
 .bg-color-primary .lead,
 [class*="bg-gradient"] .lead {
-  color: #e3e4e6;
+  color: #ffffff;
 }
 
 .bg-color-primary .type--fine-print,
@@ -1555,7 +1555,7 @@ p {
 }
 
 .btn--bg-yellow {
-  background: #f5e658;
+  background: #fff200;
   color: #2c2e30;
 }
 
@@ -1816,7 +1816,7 @@ p {
 }
 
 .form .label-control {
-  color: #2c2e30;
+  color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.8125rem;
@@ -2202,8 +2202,8 @@ p {
 }
 
 .media-player-icon--fill-coral {
-  background: #4DA15F;
-  color: #fff;
+  background: #fff;
+  color: #4DA15F;
   -webkit-box-shadow: 0 21px 16px 0 rgba(0, 0, 0, 0.09);
           box-shadow: 0 21px 16px 0 rgba(0, 0, 0, 0.09);
 }
@@ -2791,6 +2791,7 @@ p {
   top: 0;
   background: #fff;
   margin-top: -100px;
+  color: #fff;
 }
 
 [data-theme=dark] .navbar-sticky--moved-up {
