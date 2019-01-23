@@ -119,9 +119,6 @@ h6 {
 }
 
 
-#space-fly{
-  padding-top: 8rem;
-}
 
 .features h5, p{text-align: center;}
 
@@ -133,11 +130,22 @@ h6 {
 }
 
 
+#space-fly{padding-top: 8rem;}
 #space-fly{
    background-image: url('../img/shutterstock_522004027.jpg');
    background-position: center;
    background-repeat: no-repeat;
      background-size: cover;
+}
+
+#space-fly-resp{padding-top: 8rem;}
+#space-fly-resp{
+   background-image: url('../img/shutterstock_522004027-r.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+     background-size: cover;
+     height: 500px;
+
 }
 
 .creemosSection{
@@ -202,10 +210,12 @@ AQUI ENTRA LOS SETTINGS DE RESPONSIVE MODULES */
     display: none;
   
   }
+  #space-fly {display: none;}
 }
 
 @media (min-width: 768px) {
   #appPlaceResp{ display: none; }
+   #space-fly-resp{ display: none; }
 }
 
 #appPlace{color: #000000;}
@@ -216,14 +226,4 @@ AQUI ENTRA LOS SETTINGS DE RESPONSIVE MODULES */
 
 
 
-@media (max-width: 990px) {
-  #space-fly {
-    display: none;
-  
-  }
-}
-
-@media (min-width: 980px) {
-  .space-fly-resp{ display: none; }
-}
 
