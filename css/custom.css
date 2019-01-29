@@ -118,6 +118,10 @@ h6 {
   border-color: #2f5bea;
 }
 
+/*! Place your custom styles here (below). 
+      This will make it much easier to update the template later - you'll only need to preserve "this file
+  ===================================================================================================*/
+
 
 
 .features h5, p{text-align: center;}
@@ -144,7 +148,7 @@ h6 {
    background-position: center;
    background-repeat: no-repeat;
      background-size: cover;
-     height: 500px;
+     height: 400px;
 
 }
 
@@ -198,25 +202,41 @@ h6 {
 }
 
 
-/*! Place your custom styles here (below). 
-      This will make it much easier to update the template later - you'll only need to preserve "this file
-  ===================================================================================================*/
-
 /* APP PLACE - GUY DELIVERING CAR WITH TABLET
-AQUI ENTRA LOS SETTINGS DE RESPONSIVE MODULES */
+AQUI ENTRA LOS SETTINGS DE RESPONSIVE MODULES 
+
+ 
+}
+
+ 
+
+*/
+
+@media (max-width: 964px) {
+   #space-fly{display: none;}
+ 
+}
+
+@media (min-width: 965px) {
+   #space-fly-resp{display: none;}
+ 
+}
+
+
+
 
 @media (max-width: 767px) {
-  #appPlace2 {
-    display: none;
-  
-  }
-  #space-fly {display: none;}
+  #appPlace2 {display: none;  }
+ 
+   
 }
 
 @media (min-width: 768px) {
   #appPlaceResp{ display: none; }
-   #space-fly-resp{ display: none; }
+   
 }
+
+
 
 #appPlace{color: #000000;}
 #features{background-color: #4DA15F;}
