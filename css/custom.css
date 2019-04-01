@@ -6,6 +6,7 @@
 /**! ----- font family ---- **/
 body {
   font-family: "Aileron", sans-serif, "Aileron", sans-serif;
+  overflow-x !important;
 }
 
 h1,
