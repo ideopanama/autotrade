@@ -135,23 +135,32 @@ h6 {
 }
 
 
-#space-fly{padding-top: 8rem;}
+#space-fly{padding-top: 11rem;
+padding-bottom: 12rem;}
 #space-fly{
-   background-image: url('../img/shutterstock_522004027.jpg');
+   background-image: url('../img/hero-banners/Autotrade-banner-3v2.jpg');
    background-position: center;
    background-repeat: no-repeat;
      background-size: cover;
 }
 
-#space-fly-resp{padding-top: 8rem;}
+
 #space-fly-resp{
-   background-image: url('../img/shutterstock_522004027-r.jpg');
+   /*background-image: url('../img/hero-banners/Autotrade-banner-3v2-r.jpg');*/
+   background-color: #4CA15E;
    background-position: center;
    background-repeat: no-repeat;
      background-size: cover;
-     height: 400px;
+     height: 58rem;
+     text-align: center;
+     padding-top: 4rem;
 
 }
+
+#space-fly-resp img{
+text-align: center;
+}
+
 
 .creemosSection{
   color: #ffffff;
@@ -162,7 +171,7 @@ h6 {
 
 #space-fly2{
   padding-top: 30px;
-   background-image: url('../img/black-car.jpg');
+   background-image: url('../img/hero-banners/3.jpg');
    background-position: center;
    background-repeat: no-repeat;
    padding-top: 128px;
@@ -176,7 +185,7 @@ h6 {
 
 
 #appPlace2{
-   background-image: url('../img/shutterstock_403943932.jpg');
+   background-image: url('../img/hero-banners/Autotrade-banner-2.jpg');
    background-position: center;
    background-repeat: no-repeat;
      background-size: cover;
@@ -213,12 +222,12 @@ AQUI ENTRA LOS SETTINGS DE RESPONSIVE MODULES
 
 */
 
-@media (max-width: 964px) {
+@media (max-width: 1205px) {
    #space-fly{display: none;}
  
 }
 
-@media (min-width: 965px) {
+@media (min-width: 1206px) {
    #space-fly-resp{display: none;}
  
 }
