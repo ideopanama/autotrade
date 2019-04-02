@@ -171,7 +171,7 @@ text-align: center;
 
 #space-fly2{
   padding-top: 30px;
-   background-image: url('../img/hero-banners/3.jpg');
+   background-image: url('../img/hero-banners/Autotrade-banner-4.png');
    background-position: center;
    background-repeat: no-repeat;
    padding-top: 128px;
@@ -189,20 +189,27 @@ text-align: center;
    background-position: center;
    background-repeat: no-repeat;
      background-size: cover;
+     padding-top: 10rem;padding-bottom: 23rem;
 
 }
 
 #appPlaceResp{
-   background-image: url('../img/shutterstock_403943932_square.jpg');
+   background-image: url('../img/hero-banners/Autotrade-banner-2-r.jpg');
    background-position: center;
    background-repeat: no-repeat;
      background-size: cover;
-     height: 500px;
+     height: 700px;
+     padding-top: 10rem;
+     text-align: left;
 
 }
 
 .service-r{
   text-align: right;
+}
+
+.service-l{
+  text-align: left;
 }
 .feature-img{text-align: center;}
 
