@@ -47,6 +47,13 @@
     </div>
     <!-- =========== Preloader End ============ -->
 
+
+<script type="text/javascript">
+function showDiv(toggle){
+document.getElementById(toggle).style.display = 'block';
+}
+</script>
+
     <div class="main">
         <!-- =========== Start of Navigation (main menu) ============ -->
         <header class="navbar navbar-sticky navbar-expand-lg navbar-dark">
@@ -209,14 +216,23 @@
 
         <!-- =========== Start of Hero ============ -->
         <section class="pb-lg-0 hero hero--dark heroBack bigLinesWhite">
+
+
+
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-10 col-xl-8 mx-auto">
                         <div class="d-lg-flex align-items-lg-center position-relative text-center mb-100 ">
+
                             <div class="hero-content hero-content--center mx-auto">
+
                                 <h1 class="hero__title mt-60">Vende tu auto en 1, 2, 3<br> Rápido, Fácil y Transparente.</h1>
                                 <p class="lead hero__description">AutoTrade es la solución para vender tu auto de forma rápida, eficiente y transparente mediante una subasta en línea. 
 </p>
+
+
+
+
                                 <a href="#Form" class="btn btn--bg-yellow btn-3d-hover btn-splash-hover">¡Quiero Vender mi Auto!</a>
                             </div>
                             <!-- end of content -->
@@ -229,11 +245,15 @@
                     <div class="col-12 col-xl-8 mx-auto align-items-center text-center">
                         <div class="position-relative">
                          
-                            <a class="lightbox pos-center media-player-icon media-player-icon--lg media-player-icon--fill-coral btn-splash-hover" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=nPzjOQj5S-g?autoplay=1">
-                                <i class="icon icon-triangle-right-17"></i>
+                          <a onclick="showDiv('toggle')" class="pos-center media-player-icon media-player-icon--lg media-player-icon--fill-coral btn-splash-hover" data-autoplay="true" data-vbtype="video" href="#">
+                               <i class="icon icon-triangle-right-17"></i> 
                             </a>
                         </div>
                         <!-- enf of screen / video -->
+
+
+
+
                     </div>
                     <!-- end of col -->
                 </div>
@@ -253,9 +273,18 @@
         <!-- =========== Start of Features ============ -->
         <section class="space-top " id="features">
             <div class="container">
+                  <div id="toggle" style="display:none" class="video-container autovideo col-12 col-md-10 col-lg-7 col-xl-6 mx-auto">
+                            <iframe  id="autovideo"  width="960" height="600" src="https://www.youtube.com/embed/nPzjOQj5S-g?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                         
                 <div class="row">
                     <div class="col-12 col-md-10 col-lg-7 col-xl-6 mx-auto">
                         <div class="section-title reveal text-center mb-80">
+
+                          
+
+
                             <p class="mb-10 text-uppercase font-w-700"><span class="lilcolor1stsection" >¿Por qué AutoTrade?</span></p>
                             <h3 class="lilcolor1stsection">Reducimos un proceso de <br>días a 1 hora</h3>
                         </div>
