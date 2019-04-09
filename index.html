@@ -65,7 +65,7 @@ document.getElementById(toggle).style.display = 'block';
 
 
                 <div id="avaluo-white" class=" ">
-                    <a href="#Form" data-autoplay="true" data-vbtype="video" class="btn btn--outline btn--sm btn-3d-hover btn-splash-hover btnAvaluo ">
+                    <a href="#Form"  data-vbtype="video" class="btn btn--outline btn--sm btn-3d-hover btn-splash-hover btnAvaluo ">
                         <span class="btn__text btn--text">¡SOLICITA TU AVALÚO!</span> 
                     </a>
                 </div>
@@ -245,7 +245,7 @@ document.getElementById(toggle).style.display = 'block';
                     <div class="col-12 col-xl-8 mx-auto align-items-center text-center">
                         <div class="position-relative">
                          
-                          <a onclick="showDiv('toggle')" class="pos-center media-player-icon media-player-icon--lg media-player-icon--fill-coral btn-splash-hover" data-autoplay="true" data-vbtype="video" href="#">
+                          <a onclick="showDiv('toggle')" class="pos-center media-player-icon media-player-icon--lg media-player-icon--fill-coral btn-splash-hover"  data-vbtype="video" href="#">
                                <i class="icon icon-triangle-right-17"></i> 
                             </a>
                         </div>
@@ -274,7 +274,7 @@ document.getElementById(toggle).style.display = 'block';
         <section class="space-top " id="features">
             <div class="container">
                   <div id="toggle" style="display:none" class="video-container autovideo col-12 col-md-10 col-lg-7 col-xl-6 mx-auto">
-                            <iframe  id="autovideo"  width="960" height="600" src="https://www.youtube.com/embed/nPzjOQj5S-g?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  id="autovideo"  width="960" height="600" src="https://www.youtube.com/embed/nPzjOQj5S-g?" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
 
                          
@@ -533,25 +533,32 @@ document.getElementById(toggle).style.display = 'block';
     <div class="form-row mb-20">
         <div class="form-group col-sm-12 ">
             <label class="label-control mb-10" for="email">Marca de Auto *</label>
-            <input type="text" class="form-control" id="marcaDeAuto" placeholder="Toyota" required>
+            <select type="text" class="form-control" id="marcaDeAuto" placeholder="Marca de Auto" required>
+            	<option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="nissan">Nissan</option>
+                <option value="lexus">Lexus</option>
+            </select>
         </div>
     </div>    
    
       <div class="form-row mb-20">
         <div class="form-group col-sm-12 col-md-6">
             <label class="label-control mb-10" for="name">Modelo Actual*</label>
-            <input type="text" class="form-control" id="modeloDelAuto" placeholder="Prado" required>
+            <select type="text" class="form-control" id="modeloDelAuto" placeholder="Prado" required>
+                <option value="1">Prado</option>
+                <option value="cr-v">CR-v</option>
+                <option value="2">NP300</option>
+                
+            </select> 	
         </div>
+
+
         <div class="form-group col-sm-12 col-md-6">
              <label class="label-control mb-10" for="name">Año de Auto Actual*</label>
-            <input type="number" class="form-control" id="year" placeholder="2018" required>
+            <input type="number" class="form-control" id="year" placeholder="2019" required>
         </div>
     </div>
-
-
-
-
-
 
     <div class="form-row">
         <div class="form-group col-sm-12 text-center">
